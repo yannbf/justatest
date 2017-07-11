@@ -1,16 +1,115 @@
-// http://ionicframework.com/docs/v2/theming/
+/*  Stretchy Header CSS  */
+
+.toolbar-ios {
+    padding-top: calc(20px + 4px);
+    min-height: calc(44px + 20px);
+}
+
+.toolbar-ios.statusbar-padding:first-child ion-title {
+    padding-top: 20px;
+    height: calc(44px + 20px);
+    min-height: calc(44px + 20px);
+}
+
+.has_stretch_header_md {
+    margin-top: 56px;
+}
+
+.has_stretch_header_ios {
+    margin-top: calc(44px + 20px);
+}
+
+.main-content {
+    background-color: #fff;
+}
+
+.strechy {
+    .toolbar{
+        position: absolute;
+        z-index: 999;
+        opacity: .8;
+    }
+    .toolbar-background{
+        background: transparent!important;
+    }
+    .toolbar-title, .bar-button{
+        color: #fff;
+    }
+    .animated {
+        transition: all 400ms ease;
+    }
+    .onBottom {
+        transform: translate3d(0, 40px, 0);
+    }
+    .onFadeout {
+        transform: translate3d(0, -80px, 0);
+    }
+    .strechy-header-content {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        color: #fff;
+        opacity: .9;
+        bottom: 30px;
+        left: 20px;
+        text-align: left;
+        h2 {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin: 0 0 10px;
+            padding: 0;
+        }
+        h4 {
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        .line {
+            width: 50px;
+            height: 3px;
+            background: #1effea;
+        }
+    }
+    .strechy-header {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-backface-visibility: hidden;
+        overflow: hidden;
+        background-color: #d3d3d3;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .3);
+        }
+        .stretchy_header_title {
+            .title {
+                font-size: 1.7rem;
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+                pointer-events: auto;
+                max-width: 70%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
 
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+/*  END Stretchy Header CSS  */
