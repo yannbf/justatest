@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the HomePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-home',
@@ -21,8 +15,12 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
-  goToOtherPager(){
-    this.navCtrl.push('TwoPage')
+  goToOtherPage(){
+    this.navCtrl.push(HomePage)
+  }
+
+  openModal() {
+    console.log('Open modal click');
   }
 
 }

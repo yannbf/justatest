@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import {DirectivesModule} from "../directives/directives.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import {DirectivesModule} from "../directives/directives.module";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    DirectivesModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -23,7 +21,7 @@ import {DirectivesModule} from "../directives/directives.module";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
 export class AppModule {}

@@ -1,0 +1,15 @@
+<ion-header class="stretchy">
+    <ng-content></ng-content>
+    <ion-icon name="arrow-back" class="back" navPop ></ion-icon>
+
+    <div class="stretchy-header" id="stretchy-header" text-center >
+        <div class="stretchy-header-content animated" [innerHtml]="bigTitlehtmlToAdd">
+
+        </div>
+        <div class="blur-filter"></div>
+        <ion-row class="stretchy_header_title vertical-align-content ">
+            <ion-col [innerHtml]="htmlToAdd">
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-header>

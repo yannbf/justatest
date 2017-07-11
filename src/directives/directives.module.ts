@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
-import {ProfileScroll} from "./profile-scroll";
-import {StretchyHeader} from "./stretchy-header";
-import {IonicModule} from "ionic-angular";
+import { IonicModule } from "ionic-angular";
+import { ProfileScroll } from "./profile-scroll";
+import { StretchyHeader } from "./stretchy-header";
 
 @NgModule({
     declarations: [
         ProfileScroll,
         StretchyHeader
     ],
-    imports: [
-        IonicModule
-    ],
+    imports : [ IonicModule ],
     exports: [
         ProfileScroll,
         StretchyHeader
